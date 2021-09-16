@@ -1,18 +1,16 @@
-const ExpectedTime = () => (
-
+const CardInformation = () => (
     <div class="expectedTime">
         <button class="expectedTimeDropdownButton">
             <div className="expectedTimeOuterElementsContainer">
                 <div className="expectedTimeInnerElementsContainer">
                     <img className="expectedTimeClockSVG" src=
-                        "/wall-clock.svg"
-                        width="24" height="18" />
+                        "/visa-card.svg"
+                        width="30" height="24" />
                     <div className="expectedTimeInnerTextsContainer">
-                        <p className="expectedTimeInnerText">Il prima possible</p>
-                        <p className="expectedTimeInnerTextTime">20 - 30 min</p>
+                        <p className="expectedTimeInnerText">Carta che termina con 4119</p>
                     </div>
                 </div>
-                
+
                 <img className="expectedTimeDownArrowSVG" src=
                     "/down-arrow.svg"
                     width="19" height="13" />
@@ -21,20 +19,11 @@ const ExpectedTime = () => (
 
         <div class="expectedTimeContent">
             <a href="#">
-                <p>Il prima possible</p>
-                <p>20 - 30 min</p>
-            </a>
-            <a href="#">
-                <p>30 - 40 min</p>
-            </a>
-            <a href="#">
-                <p>40 - 60 min</p>
+                <p>**** **** **** 4119</p>
             </a>
         </div>
     </div >
-
-
 );
 
 
-export default ExpectedTime;
+export default CardInformation;

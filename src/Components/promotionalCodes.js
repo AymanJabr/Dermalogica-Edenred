@@ -1,7 +1,9 @@
+import PromotionalCodeDropdown from "./promotionalCodeDropdown";
+
 const PromotionalCodes = () => (
     <div className="promotionalCodes">
-        Il tuo ordine
-
+        <h1>Codice Promozionale</h1>
+        <PromotionalCodeDropdown />
     </div>
 );
 
