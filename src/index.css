@@ -6,11 +6,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .checkoutPage {
   display: flex;
+}
+
+.checkoutPageLeftContainer {
+  margin: 0 24px;
 }
 
 .expectedTimeDropdownButton {
@@ -96,13 +100,51 @@
 
 .mediumEdenredButton {
   padding: 0 90px;
+  margin: 12px 0px 24px 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-width: 140px;
   height: 48px;
   border: 2px solid #1d204c;
   border-radius: 50px;
   color: #747474;
+}
+
+.loggedInBannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loggedInEdenred {
+  padding-right: 20px;
+  margin: 12px 0px 24px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 48px;
+  color: #747474;
+}
+
+.loggedInEdenredAfter {
+  margin: 32px 0;
+}
+
+.loggedInHeader {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1d204c;
+}
+
+.loggedInExitButton {
+  color: #c0272d;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .edenredButtonText {
@@ -136,6 +178,9 @@
 
 .partnerPlatformsMinorText {
   color: #747474;
+  margin-bottom: 0;
+  margin: 0;
+  margin-top: 24px;
 }
 
 .paymentReceiptOption {
@@ -147,4 +192,206 @@
   color: #747474;
   font-size: 14px;
   display: block;
+}
+
+.promotionalCodes {
+  margin-top: 80px;
+}
+
+.yourOrder {
+  width: 40vw;
+  margin-left: 4vw;
+  margin-right: 1vw;
+  border-right: 10px;
+  -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.23);
+}
+
+.yourOrderSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 40px 20px;
+  padding-bottom: 20px;
+  border: 1px solid #f1f1f1;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.yourOrderSummaryMinorText {
+  color: #747474;
+  font-size: 14px;
+}
+
+.yourOrderSummaryMainText {
+  margin-bottom: 10px;
+}
+
+.yourOrderItemContainer {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f1f1f1;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.yourOrderItemContainerSecond {
+  border: none;
+}
+
+.yourOrderItemText {
+  margin-right: 5px;
+}
+
+.yourOrderAllergiesButton {
+  display: inline-block;
+  text-decoration: none;
+  color: turquoise;
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.yourOrderContactlessNotification {
+  margin: 0 20px;
+  color: #747474;
+  font-size: 13px;
+}
+
+.discountTicketsGrid {
+  display: grid;
+  grid-template-areas: 
+  "header1 header2 header3"
+  "separator1 separator1 separator1"
+  "num1 container1 num2"
+  "separator2 separator2 separator2"
+  "num3 container2 num4"
+  "separator3 separator3 separator3"
+  "total . num5";
+  justify-items: center;
+  align-items: center;
+}
+
+.discountTicketsSeparator {
+  width: 100%;
+  border: 2px solid #f1f1f1;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.discountTicketsHeaders {
+  color: #8C8C8C;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.discountTicketsCounterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.discountTicketsCounterButtonInactive {
+  background-color: #E9EBF0;
+  color: white;
+  cursor: auto;
+  height: 20px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  border-radius: 50px;
+  margin: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.discountTicketsCounterButtonActive {
+  background-color: #2972b8;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.discountTicketsTextType1 {
+  color: #1D204C;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 32px 0;
+}
+
+.discountTicketsTextType2 {
+  color: #1D204C;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 32px 0;
+}
+
+.separator1 {
+  grid-area: separator1;
+}
+
+.separator2 {
+  grid-area: separator2;
+}
+
+.separator3 {
+  grid-area: separator3;
+}
+
+.container1 {
+  grid-area: container1;
+}
+
+.container2 {
+  grid-area: container2;
+}
+
+.header1 {
+  grid-area: header1;
+}
+
+.header2 {
+  grid-area: header2;
+}
+
+.header3 {
+  grid-area: header3;
+}
+
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.num4 {
+  grid-area: num4;
+}
+
+.num5 {
+  grid-area: num5;
+}
+
+.total {
+  grid-area: total;
 }
