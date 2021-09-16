@@ -5,6 +5,10 @@
   margin-top: 40vh;
 }
 
+.checkoutPage {
+  display: flex;
+}
+
 
 .mediumEdenredButton {
   padding: 0 90px;
