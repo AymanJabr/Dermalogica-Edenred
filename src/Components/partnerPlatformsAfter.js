@@ -1,3 +1,5 @@
+import AutomaticTicketSelection from "./automaticTicketSelection";
+import ErrorNotification from "./errorNotification";
 import LoggedInEdenred from "./loggedInEdenred";
 
 const PartnerPlatformsAfter = () => (
@@ -6,6 +8,9 @@ const PartnerPlatformsAfter = () => (
         <h1 className="partnerPlatformsHeaderText">Piattaforma Partner</h1>
         
         <LoggedInEdenred />
+
+        <ErrorNotification />
+        <AutomaticTicketSelection />
 
     </div>
 );

@@ -120,6 +120,16 @@
   box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 600px) {
+  .loggedInBannerContainer {
+    flex-direction: column;
+  }
+
+  .loggedInExitContainer {
+    margin-bottom: 32px;
+  }
+}
+
 .loggedInEdenred {
   padding-right: 20px;
   margin: 12px 0px 24px 0px;
@@ -199,12 +209,30 @@
 }
 
 .yourOrder {
+  position: relative;
   width: 40vw;
+  padding-bottom: 10vh;
+  margin-bottom: auto;
   margin-left: 4vw;
   margin-right: 1vw;
   border-right: 10px;
   -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.23);
+}
+
+.yourOrder:after {
+  background: linear-gradient(-50deg, rgba(0, 0, 0, 0.23) 16px, transparent 0),
+    linear-gradient(50deg, rgba(0, 0, 0, 0.23) 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 26px;
 }
 
 .yourOrderSummary {
@@ -264,14 +292,15 @@
 
 .discountTicketsGrid {
   display: grid;
-  grid-template-areas: 
-  "header1 header2 header3"
-  "separator1 separator1 separator1"
-  "num1 container1 num2"
-  "separator2 separator2 separator2"
-  "num3 container2 num4"
-  "separator3 separator3 separator3"
-  "total . num5";
+  grid-template-areas:
+    "header1 header2 header3"
+    "separator1 separator1 separator1"
+    "num1 container1 num2"
+    "separator2 separator2 separator2"
+    "num3 container2 num4"
+    "separator3 separator3 separator3"
+    "total . num5"
+    "automatic automatic automatic";
   justify-items: center;
   align-items: center;
 }
@@ -285,7 +314,7 @@
 }
 
 .discountTicketsHeaders {
-  color: #8C8C8C;
+  color: #8c8c8c;
   font-weight: 600;
   font-size: 14px;
   margin: 24px 0;
@@ -299,7 +328,7 @@
 }
 
 .discountTicketsCounterButtonInactive {
-  background-color: #E9EBF0;
+  background-color: #e9ebf0;
   color: white;
   cursor: auto;
   height: 20px;
@@ -327,14 +356,14 @@
 }
 
 .discountTicketsTextType1 {
-  color: #1D204C;
+  color: #1d204c;
   font-weight: 600;
   font-size: 20px;
   padding: 32px 0;
 }
 
 .discountTicketsTextType2 {
-  color: #1D204C;
+  color: #1d204c;
   font-weight: normal;
   font-size: 20px;
   padding: 32px 0;
@@ -394,4 +423,84 @@
 
 .total {
   grid-area: total;
+}
+
+.errorNotification {
+  display: flex;
+  color: #c0272d;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.errorNotificationSVG {
+  margin-right: 10px;
+  filter: invert(14%) sepia(73%) saturate(6459%) hue-rotate(352deg)
+    brightness(83%) contrast(77%);
+}
+
+.automaticTicketSelection {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.switch {
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 17px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
