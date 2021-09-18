@@ -1,12 +1,12 @@
 import Checkout from "./Pages/Checkout";
-import EdenredLogin from "./Pages/EdenredLogin";
-import YourCart from "./Pages/YourCart";
+import CheckoutMobile from "./Pages/CheckoutMobile";
 
 function App() {
   return (
     <div className="App">
 
-      <Checkout />
+      {/* <Checkout /> */}
+      <CheckoutMobile />
       {/* <EdenredLogin /> */}
       {/* <YourCart /> */}
     </div>
