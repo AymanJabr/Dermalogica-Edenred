@@ -19,7 +19,7 @@
 
 .expectedTimeDropdownButton {
   background-color: white;
-  border: 1px solid #747474;
+  border: 1px solid #f1f1f1;
   border-radius: 0;
   border-top: none;
   border-right: none;
@@ -97,6 +97,71 @@
 .expectedTime:hover .expectedTimeDropdownButton {
   background-color: #f1f1f1;
 }
+
+.expectedTimeAppDelivery {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #f1f1f1;
+  border-right: none;
+  border-left: none;
+}
+
+.expectedTimeDeliverySVG {
+  margin-right: 10px;
+}
+
+.expectedTimeApp {
+  margin-bottom: 0px;
+}
+
+.checkoutMobileHeader {
+  text-align: center;
+}
+
+.deliveryOptionsAppContainer {
+  margin-top: 20px;
+}
+
+.deliveryOptionsAppButtonsContainer {
+  display: flex;
+}
+
+.deliveryOptionButton {
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px 5px;
+  font-size: 14px;
+}
+
+.deliveryOptionButtonDoor {
+  background-color: #e9ebf0;
+}
+
+.deliveryOptionButtonPerson {
+  background-color: black;
+}
+
+.deliveryOptionButtonSVG {
+  margin-right: 10px;
+}
+
+.deliveryOptionButtonDoorSVG {
+  filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(337deg) brightness(100%) contrast(107%);
+}
+
+.deliveryOptionButtonPersonSVG {
+  filter: invert(100%) sepia(9%) saturate(35%) hue-rotate(247deg) brightness(107%) contrast(107%);
+}
+
+.deliveryOptionButtonPersonText {
+  color: white;
+}
+
+
 
 .mediumEdenredButton {
   padding: 0 90px;
@@ -193,6 +258,40 @@
   margin-top: 24px;
 }
 
+.partnerPlatformAppContainer {
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+.summaryAppContainer {
+  margin: 20px 0;
+
+}
+
+.summaryAppContainer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.summaryAppSmallOrdersContainer {
+  color: #747474;
+  font-size: 14px;
+}
+
+.summaryAppServicesContainer {
+  color: #747474;
+  font-size: 14px;
+}
+
+.summaryAppTotalHeader {
+  font-weight: 900;
+}
+
 .paymentReceiptOption {
   margin-right: 15px;
   margin-top: 5px;
@@ -202,6 +301,24 @@
   color: #747474;
   font-size: 14px;
   display: block;
+}
+
+.nextButtonAppContainer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-content: center;
+  padding: 15px 10px;
+  justify-content: space-between;
+}
+
+.nextButtonText {
+  padding-left: 40px;
+}
+
+.nextButtonAppSpace {
+  color: black;
 }
 
 .promotionalCodes {
@@ -289,6 +406,59 @@
   color: #747474;
   font-size: 13px;
 }
+
+.yourOrderAppHeadersContainer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yourOrderAppHeaderText {
+  font-weight: bold;
+}
+
+.yourOrderAppHeaderMenuButton {
+  font-size: 14px;
+  color: green;
+  cursor: pointer;
+}
+
+.yourOrderAppBodyItemContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+.yourOrderAppItemCounter {
+  background-color: #e9ebf0;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+}
+
+.yourOrderAppItemDescriptionContainer {
+}
+
+.yourOrderAppItemDescriptionMainHeader {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.yourOrderAppItemDescriptionMinorHeader {
+  font-size: 12px;
+  color: #747474;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.yourOrderAppItemPrice
+
+
 
 .discountTicketsGrid {
   display: grid;
