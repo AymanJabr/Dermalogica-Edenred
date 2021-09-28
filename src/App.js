@@ -5,10 +5,8 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Checkout /> */}
-      <CheckoutMobile />
-      {/* <EdenredLogin /> */}
-      {/* <YourCart /> */}
+      <Checkout />
+      {/* <CheckoutMobile /> */}
     </div>
   );
 }
